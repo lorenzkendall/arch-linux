@@ -1,4 +1,4 @@
-# Install updates / sync packages 
+# Update system and sync packages
 sudo pacman -Syu 
 
 # Bluetooth setup 
@@ -16,6 +16,13 @@ pair <mac-address> # Replace <mac-address> with your device's MAC address
 connect <mac-address> # Replace <mac-address> with your device's MAC address
 scan off
 sudo vim /etc/bluetooth/main.conf # Change "AutoEnable=false" to "true" 
+
+# Install yay to install apps from AUR
+sudo pacman -Syu
+sudo pacman -S base-devel git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
 # Mirrors with Reflector 
 sudo pacman -S reflector 
