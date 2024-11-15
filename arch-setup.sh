@@ -1,3 +1,6 @@
+# Install updates / sync packages 
+sudo pacman -Syu 
+
 # Bluetooth setup 
 sudo pacman -S bluez bluez-utils
 bluetoothctl start bluetooth.service
