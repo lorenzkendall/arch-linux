@@ -17,6 +17,11 @@ connect <mac-address> # Replace <mac-address> with your device's MAC address
 scan off
 sudo vim /etc/bluetooth/main.conf # Change "AutoEnable=false" to "true" 
 
+# Install UFW firewall 
+sudo pacman -S ufw
+sudo systemctl start ufw
+sudo systemctl enable ufw
+
 # Install yay to install apps from AUR
 sudo pacman -Syu
 sudo pacman -S base-devel git
