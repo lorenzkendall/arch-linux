@@ -28,3 +28,7 @@ makepkg -si
 sudo pacman -S reflector 
 sudo reflector --verbose --sort rate -l 70 -c US --protocol https --save /etc/pacman.d/mirrorlist 
 
+# Backups with Timeshift
+sudo pacman -S timeshift
+# Launch Timeshift GUI from Application Launcher
+# Create a snapshot on your local drive, then upload it to cloud storage
