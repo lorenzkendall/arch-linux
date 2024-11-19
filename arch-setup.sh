@@ -19,13 +19,14 @@ sudo vim /etc/bluetooth/main.conf # Change "AutoEnable=false" to "true"
 
 # Install UFW firewall 
 sudo pacman -S ufw
-sudo systemctl start ufw
-sudo systemctl enable ufw
 sudo ufw limit 22/tcp
 sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
+sudo ufw enable 
+sudo systemctl enable ufw
+sudo ufw status
 
 # Install yay to install apps from AUR
 sudo pacman -Syu
