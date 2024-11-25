@@ -37,18 +37,20 @@ makepkg -si
 
 # Set fastest mirrors using Reflector 
 sudo pacman -S reflector 
-sudo reflector --verbose --sort rate -l 70 -c US --protocol https --save /etc/pacman.d/mirrorlist 
+sudo reflector --verbose --sort rate -l 10 -c US --protocol https --save /etc/pacman.d/mirrorlist 
 
 # Speedtest CLI
 sudo pacman -S speedtest-cli
 
 # Bash command aliases
 sudo vim ~/.bashrc 
+alias a='sudo vim ~/.bashrc'
 alias c='clear'
-alias p='ping 1.1.1.1"
-alias u='sudo pacman -Syu'
 alias n='neofetch'
+alias p='ping 1.1.1.1'
 alias s='speedtest-cli --secure'
+alias u='sudo pacman -Syu'
+alias x='exit'
 
 # Backups with Timeshift
 sudo pacman -S timeshift
