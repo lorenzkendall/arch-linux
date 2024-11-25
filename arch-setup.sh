@@ -35,11 +35,21 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
-# Mirrors with Reflector 
+# Set fastest mirrors using Reflector 
 sudo pacman -S reflector 
 sudo reflector --verbose --sort rate -l 70 -c US --protocol https --save /etc/pacman.d/mirrorlist 
+
+# Speedtest CLI
+sudo pacman -S speedtest-cli
+
+# Bash command aliases
+sudo vim ~/.bashrc 
+alias c='clear'
+alias neo='neofetch'
+alias spt='speedtest-cli --secure'
 
 # Backups with Timeshift
 sudo pacman -S timeshift
 # Launch Timeshift GUI from Application Launcher
 # Create a snapshot on your local drive, then upload it to cloud storage
+
