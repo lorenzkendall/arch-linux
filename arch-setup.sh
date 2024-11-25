@@ -45,8 +45,10 @@ sudo pacman -S speedtest-cli
 # Bash command aliases
 sudo vim ~/.bashrc 
 alias c='clear'
-alias neo='neofetch'
-alias spt='speedtest-cli --secure'
+alias p='ping 1.1.1.1"
+alias u='sudo pacman -Syu'
+alias n='neofetch'
+alias s='speedtest-cli --secure'
 
 # Backups with Timeshift
 sudo pacman -S timeshift
