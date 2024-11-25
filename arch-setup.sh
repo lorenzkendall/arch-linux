@@ -46,6 +46,7 @@ sudo pacman -S speedtest-cli
 sudo vim ~/.bashrc 
 alias a='sudo vim ~/.bashrc'
 alias c='clear'
+alias m='sudo reflector --verbose --sort rate -l 10 -c US --protocol https --save /etc/pacman.d/mirrorlist'
 alias n='neofetch'
 alias p='ping 1.1.1.1'
 alias s='speedtest-cli --secure'
