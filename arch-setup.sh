@@ -1,3 +1,5 @@
+# These are my post-install steps, after running archinstall script
+
 # Update system and sync packages
 sudo pacman -Syu 
 
