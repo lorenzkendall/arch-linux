@@ -41,6 +41,9 @@ makepkg -si
 sudo pacman -S reflector 
 sudo reflector --verbose --sort rate -l 10 -c US --protocol https --save /etc/pacman.d/mirrorlist 
 
+# Media viewers and editors
+sudo pacman -S nomacs mpv gimp kdenlive
+
 # Speedtest CLI
 sudo pacman -S speedtest-cli
 
