@@ -1,7 +1,10 @@
 # These are my post-install steps, after running archinstall script
 
-# Update system and sync packages
-sudo pacman -Syu 
+# Common pacman commands 
+sudo pacman -Syu # Update system and sync packages
+sudo pacman -S <package-name> # Install package
+sudo pacman -Rns <package-name> # Uninstall package
+pacman -Q # View installed packages 
 
 # Bluetooth setup 
 sudo pacman -S bluez bluez-utils
