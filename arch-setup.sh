@@ -40,12 +40,15 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
+# Install nomacs image viewer from AUR with yay
+yay -S nomacs 
+
 # Set fastest mirrors using Reflector 
 sudo pacman -S reflector 
 sudo reflector --verbose --sort rate -l 10 -c US --protocol https --save /etc/pacman.d/mirrorlist 
 
 # Media viewers and editors
-sudo pacman -S nomacs mpv gimp kdenlive
+sudo pacman -S mpv gimp kdenlive
 
 # Speedtest CLI
 sudo pacman -S speedtest-cli
